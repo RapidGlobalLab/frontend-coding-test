@@ -1,8 +1,8 @@
-## 문제1: react-query+Typescript
+# 문제1: react-query+Typescript
 
 Typescript의 제네릭, 인터페이스를 활용하여 useQuery(GET), useMutation(POST) 함수를 만들어주세요.
 
-# 요구사항
+## 요구사항
 
 이미 설치되어있는 axios, @tanstack/react-query 라이브러리를 사용해주세요.
 필요하다면 추가로 인터페이스를 작성하여 구현해도 됩ㄴ디ㅏ.
@@ -18,10 +18,10 @@ Typescript의 제네릭, 인터페이스를 활용하여 useQuery(GET), useMutat
 - Req DTO: SearchProductListDTO
 - Res DTO : PaginationResDTO<SimpleProductDTO>
 
-# 데이터 예시
+## 데이터 예시
 - DTO 를 참고해주세요.
 
-## 문제2: 넘버 타입을 검증하는 유틸 함수
+# 문제2: 넘버 타입을 검증하는 유틸 함수
 
 ```ts
 console.log(isNumber(42));      // true
@@ -39,9 +39,9 @@ console.log(isNumber(['a']));   // false
 해당 조건을 모두 만족하는 유틸함수를 작성해주세요.
 유틸함수는 `src/utils/index.ts` 에 작성해주세요.
 
-## 문제3: 상품 데이터 처리
+# 문제3: 상품 데이터 처리
 당신은 온라인 쇼핑몰의 개발자로, 상품 목록을 관리하는 코드를 작성해야 합니다. 각 상품은 name(상품명), price(가격), quantity(수량) 속성을 가집니다.
-# 데이터 예시
+## 데이터 예시
 
 ```ts
 const products = [
@@ -53,7 +53,7 @@ const products = [
 ];
 ```
 
-# 요구 사항
+## 요구 사항
 
 - 총 재고 가치 계산하기: map과 reduce 메소드를 사용하여 모든 상품의 총 재고 가치를 계산하세요. 상품의 재고 가치는 상품의 가격(price)과 수량(quantity)을 곱한 값입니다. 모든 상품의 재고 가치의 합을 구하세요.
 - 특정 가격 이하 상품 찾기: filter와 map 메소드를 사용하여 가격이 100,000원 이하인 모든 상품의 이름을 배열로 반환하세요.
