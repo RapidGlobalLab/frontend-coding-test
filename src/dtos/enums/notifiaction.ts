@@ -1,0 +1,7 @@
+export const NOTIFICATION_TYPE = {
+  NOTICE: 'NOTICE',
+  ALERT: 'ALERT',
+  EVENT: 'EVENT',
+};
+
+export type NOTIFICATION_TYPE = typeof NOTIFICATION_TYPE[keyof typeof NOTIFICATION_TYPE];

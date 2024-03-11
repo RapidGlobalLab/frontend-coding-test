@@ -1,3 +1,49 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["unicorn"],
+  "extends": [
+    "next",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "react/no-unknown-property": ["error", { "ignore": ["css"] }],
+    "react-hooks/exhaustive-deps": "error",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-key": "error",
+    "import/extensions": ["off"],
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    "import/no-unresolved": "off",
+    "arrow-body-style": ["error", "as-needed"],
+    "react/destructuring-assignment": ["error", "never"],
+    "no-console": "error",
+    "@next/next/no-img-element": "error",
+    "camelcase": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "**/*.test.tsx",
+          "**/*.spec.ts",
+          "**/playwright.config.ts",
+          "**/global-setup.ts",
+          "**/ignorePopup-setup.ts"
+        ]
+      }
+    ]
+  }
 }

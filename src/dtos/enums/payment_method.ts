@@ -1,0 +1,8 @@
+export const PAYMENT_METHOD = {
+  CARD: 'CARD',
+  KAKAOPAY: 'KAKAOPAY',
+  NAVERPAY: 'NAVERPAY',
+  TOSSPAY: 'TOSSPAY',
+};
+
+export type PAYMENT_METHOD = typeof PAYMENT_METHOD[keyof typeof PAYMENT_METHOD];
