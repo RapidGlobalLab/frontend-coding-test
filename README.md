@@ -37,6 +37,7 @@ console.log(isNumber(true));    // false
 console.log(isNumber(['a']));   // false
 ```
 해당 조건을 모두 만족하는 유틸함수를 작성해주세요.
+유틸함수는 `src/utils/index.ts` 에 작성해주세요.
 
 ## 문제3: 상품 데이터 처리
 당신은 온라인 쇼핑몰의 개발자로, 상품 목록을 관리하는 코드를 작성해야 합니다. 각 상품은 name(상품명), price(가격), quantity(수량) 속성을 가집니다.

@@ -2,7 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
-  /* TODO: react-query 과제 작성 */
+  /* TODO: 문제 1: 작성 */
+
+  /* TODO: 문제 2 작성 */
   return (
     <main className={styles.main}>
       <div className={styles.description}>
